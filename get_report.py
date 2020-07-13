@@ -26,4 +26,3 @@ for dataset in nlprep.list_all_datasets():
         with open(os.path.join(nlp2.get_dir_with_notexist_create('./website/src/assets/'), 'datasets.json'), 'w',
                   encoding='utf8') as f:
             json.dump(datasets_json, f, ensure_ascii=False)
-        break
