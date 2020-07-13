@@ -1802,6 +1802,10 @@ hr.major {
     border-bottom: dotted 1px rgba(160, 160, 160, 0.65);
     display: block;
     margin: 0 0 0 1.5em;
+    font-size: 1.2em;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
 }
 
 .author img {

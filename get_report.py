@@ -12,7 +12,7 @@ for dataset in nlprep.list_all_datasets():
             print(ds_name, mf.dump_list()[:3])
             profile = mf.get_report(ds_name)
             profile.to_file(
-                os.path.join(nlp2.get_dir_with_notexist_create('./website/public/reports/'), ds_name + "_report.html"))
+                os.path.join(nlp2.get_dir_with_notexist_create('./public/reports/'), ds_name + "_report.html"))
             datasets_json[dataset + " : " + ds_name] = {
                 "id": dataset,
                 'filename': ds_name,
@@ -23,6 +23,6 @@ for dataset in nlprep.list_all_datasets():
                 "files": list(ds_info['DATASET_FILE_MAP'].keys())
             }
 
-        with open(os.path.join(nlp2.get_dir_with_notexist_create('./website/src/assets/'), 'datasets.json'), 'w',
+        with open(os.path.join(nlp2.get_dir_with_notexist_create('./src/assets/'), 'datasets.json'), 'w',
                   encoding='utf8') as f:
             json.dump(datasets_json, f, ensure_ascii=False)
