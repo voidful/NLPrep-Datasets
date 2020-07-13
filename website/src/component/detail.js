@@ -14,11 +14,12 @@ class DETAIL extends React.Component {
     }
 
     render() {
+        console.log('/reports/' + this.dataset['filename'] + '_report.html')
         return (
             <div id="dataset">
                 <section id="main">
                     <Iframe
-                        url='/reports/pttchat_report.html'
+                        url={'/reports/' + this.dataset['filename'] + '_report.html'}
                     />
                 </section>
 
@@ -26,7 +27,7 @@ class DETAIL extends React.Component {
                     <section id="intro">
                         <header>
                             <h2>{this.dataset_id}</h2>
-                            <p>{this.dataset['name']}</p>
+                            <p>{this.dataset['fullname']}</p>
                             <p>{this.task_res['tag2name'][this.dataset['task']]}</p>
                             <a href="https://github.com/voidful/NLPrep">https://github.com/voidful/NLPrep</a>
                         </header>
@@ -40,23 +41,27 @@ class DETAIL extends React.Component {
                     </section>
                     <section className="blurb">
                         <h2>Usage</h2>
-                        <time id="python">Python
-                            <CodeBlock
-                                text={"import nlprep\n" +
-                                "ds = nlprep.load_dataset('" + this.dataset['dstag'] + "')\n" +
-                                "for ds_name, mf in nlprep.convert_middleformat(ds).items():\n" +
-                                "   print(ds_name, mf.dump_list()[:10])"}
-                                language={'python'}
-                                showLineNumbers={false}
-                                theme={github}
-                            />
-                        </time>
+                        <div id="python">
+                            Python
+                        </div>
+                        <CodeBlock
+                            text={"import nlprep\n" +
+                            "ds = nlprep.load_dataset('" + this.dataset['id'] + "')\n" +
+                            "for ds_name, mf in nlprep.convert_middleformat(ds).items():\n" +
+                            "   print(ds_name, mf.dump_list()[:10])"}
+                            language={'python'}
+                            showLineNumbers={false}
+                            theme={github}
+                        />
                         <br/>
-                        <time id="bash">BASH
+                        <div>
+                            BASH
+                        </div>
+                        <div id="bash">
                             <CodeBlock
                                 text={"!pip install nlprep\n" +
                                 "nlprep\\\n" +
-                                "--dataset      " + this.dataset['tag'] + "\\\n" +
+                                "--dataset      " + this.dataset['id'] + "\\\n" +
                                 "--outdir       #path, string\n" +
                                 "optional arguments:\n" +
                                 "--util         #utility name,string\n" +
@@ -66,9 +71,9 @@ class DETAIL extends React.Component {
                                 showLineNumbers={false}
                                 theme={github}
                             />
-                        </time>
-                        <br/>
-                        <time>Tools</time>
+                            <br/>
+                        </div>
+                        <div>Tools</div>
                         <ul>
                             <li>
                                 <a href="https://github.com/voidful/NLPrep" target="_blank" rel="noopener noreferrer">DATA

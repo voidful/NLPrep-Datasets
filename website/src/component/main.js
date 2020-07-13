@@ -50,7 +50,7 @@ class MAIN extends React.Component {
                 <article className="post">
                     <header>
                         <div className="title">
-                            <h2>Search for this.datasets</h2>
+                            <h2>Search for datasets</h2>
                             <input type="text" name={"query"}
                                    onChange={(e) => this.setState({search: e.target.value.split(' ')})}/>
                             <br/>

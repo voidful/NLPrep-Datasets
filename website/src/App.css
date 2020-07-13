@@ -1829,6 +1829,9 @@ hr.major {
     font-size: 0.9em;
 }
 
+.blurb div{
+    margin-bottom: 1em;
+}
 /* Box */
 
 .box {
@@ -2610,6 +2613,9 @@ ul.posts article header {
     -ms-flex-grow: 1;
     flex-grow: 1;
     -ms-flex: 1;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
 }
 
 ul.posts article header h3 {
@@ -3296,7 +3302,7 @@ body.single #wrapper {
         width: 100%;
     }
 
-    #dataset code{
+    #dataset code {
         width: 100%;
     }
 
