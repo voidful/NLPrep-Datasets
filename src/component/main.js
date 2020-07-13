@@ -56,7 +56,7 @@ class MAIN extends React.Component {
                             <br/>
                             <div className="posts">
                                 {this.task_res['list'].map((key, index) => (
-                                    <div key={key + index} onClick={() => this.taskSelected(key)}>
+                                    <div key={key + index} onClick={() => this.taskSelected(key+"_")}>
                                         <div className="author">
                                             <img
                                                 src={this.task_res['tag2img'][key]} alt={key}/>
