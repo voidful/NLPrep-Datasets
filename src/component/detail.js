@@ -14,12 +14,11 @@ class DETAIL extends React.Component {
     }
 
     render() {
-        console.log('/reports/' + this.dataset['filename'] + '_report.html')
         return (
             <div id="dataset">
                 <section id="main">
                     <Iframe
-                        url={'/reports/' + this.dataset['filename'] + '_report.html'}
+                        url={process.env.PUBLIC_URL+'/reports/' + this.dataset['filename'] + '_report.html'}
                     />
                 </section>
 
