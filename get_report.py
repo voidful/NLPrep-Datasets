@@ -4,7 +4,7 @@ import nlp2
 import nlprep
 
 datasets_json = {}
-for dataset in nlprep.list_all_datasets():
+for dataset in nlprep.list_all_datasets(ignore_list=["clas_csv", "gen_masklm"]):
     ds = nlprep.load_dataset(dataset)
     ds_info = ds.DATASETINFO
     if 'DATASET_FILE_MAP' in ds_info:
