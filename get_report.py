@@ -9,7 +9,7 @@ for dataset in nlprep.list_all_datasets(ignore_list=["clas_csv", "gen_masklm"]):
     ds_info = ds.DATASETINFO
     if 'DATASET_FILE_MAP' in ds_info:
         for ds_name, mf in nlprep.convert_middleformat(ds).items():
-            print(ds_name, mf.dump_list()[:3])
+            print(ds_name)
             profile = mf.get_report(ds_name)
             profile.to_file(
                 os.path.join(nlp2.get_dir_with_notexist_create('./public/reports/'), ds_name + "_report.html"))
