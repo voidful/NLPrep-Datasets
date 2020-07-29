@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/NLPrep-Datasets/static/css/main.d3f48d1f.chunk.css",
+    "main.css": "/NLPrep-Datasets/static/css/main.481dd85b.chunk.css",
     "main.js": "/NLPrep-Datasets/static/js/main.777a22f8.chunk.js",
     "main.js.map": "/NLPrep-Datasets/static/js/main.777a22f8.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.js": "/NLPrep-Datasets/static/js/react-syntax-highlighter_languages_refractor_abap.ee1b21fc.chunk.js",
@@ -312,16 +312,16 @@
     "static/js/154.76e30be4.chunk.js": "/NLPrep-Datasets/static/js/154.76e30be4.chunk.js",
     "static/js/154.76e30be4.chunk.js.map": "/NLPrep-Datasets/static/js/154.76e30be4.chunk.js.map",
     "index.html": "/NLPrep-Datasets/index.html",
-    "precache-manifest.6211a4ddd8de9940018cc96550f584c7.js": "/NLPrep-Datasets/precache-manifest.6211a4ddd8de9940018cc96550f584c7.js",
+    "precache-manifest.92fac1be03cac4a36a82f496eea17b48.js": "/NLPrep-Datasets/precache-manifest.92fac1be03cac4a36a82f496eea17b48.js",
     "service-worker.js": "/NLPrep-Datasets/service-worker.js",
-    "static/css/main.d3f48d1f.chunk.css.map": "/NLPrep-Datasets/static/css/main.d3f48d1f.chunk.css.map",
+    "static/css/main.481dd85b.chunk.css.map": "/NLPrep-Datasets/static/css/main.481dd85b.chunk.css.map",
     "static/js/153.15657cbc.chunk.js.LICENSE.txt": "/NLPrep-Datasets/static/js/153.15657cbc.chunk.js.LICENSE.txt",
     "static/media/logo.png": "/NLPrep-Datasets/static/media/logo.b9a5829f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.54237800.js",
     "static/js/153.15657cbc.chunk.js",
-    "static/css/main.d3f48d1f.chunk.css",
+    "static/css/main.481dd85b.chunk.css",
     "static/js/main.777a22f8.chunk.js"
   ]
 }
