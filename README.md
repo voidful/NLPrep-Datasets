@@ -10,13 +10,10 @@
         <img alt="PyPI" src="https://img.shields.io/pypi/v/nlprep">
     </a>
     <a href="https://github.com/voidful/NLPrep">
-        <img alt="Download" src="https://img.shields.io/pypi/dm/nlprep">
+        <img alt="Last Commit" src="https://img.shields.io/github/last-commit/voidful/nlprep-datasets">
     </a>
-    <a href="https://github.com/voidful/NLPrep">
-        <img alt="Build" src="https://img.shields.io/github/workflow/status/voidful/NLPrep/Python package">
-    </a>
-    <a href="https://github.com/voidful/NLPrep">
-        <img alt="Last Commit" src="https://img.shields.io/github/last-commit/voidful/NLPrep">
+    <a href="https://www.codefactor.io/repository/github/voidful/nlprep-datasets">
+        <img src="https://www.codefactor.io/repository/github/voidful/nlprep-datasets/badge" alt="CodeFactor" />
     </a>
 </p>
 
