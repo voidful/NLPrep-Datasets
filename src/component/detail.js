@@ -18,7 +18,7 @@ class DETAIL extends React.Component {
             <div id="dataset">
                 <section id="main">
                     <Iframe
-                        url={process.env.PUBLIC_URL+'/reports/' + this.dataset['filename'] + '_report.html'}
+                        url={process.env.PUBLIC_URL + '/reports/' + this.dataset['filename'] + '_report.html'}
                     />
                 </section>
 
@@ -58,10 +58,10 @@ class DETAIL extends React.Component {
                         </div>
                         <div id="bash">
                             <CodeBlock
-                                text={"!pip install nlprep\n" +
+                                text={"!pip install nlprep\n\n" +
                                 "nlprep\\\n" +
                                 "--dataset      " + this.dataset['id'] + "\\\n" +
-                                "--outdir       #path, string\n" +
+                                "--outdir       dataset_" + this.dataset['id'] + " \n\n" +
                                 "optional arguments:\n" +
                                 "--util         #utility name,string\n" +
                                 "--cachedir     #path,string\n" +
