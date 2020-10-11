@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2737457f10fca895602873c7d5513e2c",
+    "revision": "32c0c5e00d98e8a9955c051db0f6f53e",
     "url": "/NLPrep-Datasets/index.html"
   },
   {
-    "revision": "7e84e633249af90eeb8f",
+    "revision": "6c4a7baf6dcab66f0830",
     "url": "/NLPrep-Datasets/static/css/main.481dd85b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NLPrep-Datasets/static/js/154.76e30be4.chunk.js"
   },
   {
-    "revision": "7e84e633249af90eeb8f",
-    "url": "/NLPrep-Datasets/static/js/main.17d8a02b.chunk.js"
+    "revision": "6c4a7baf6dcab66f0830",
+    "url": "/NLPrep-Datasets/static/js/main.97cffdba.chunk.js"
   },
   {
     "revision": "d57ea772882bb4c9e9d3",
