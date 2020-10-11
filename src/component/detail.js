@@ -59,7 +59,7 @@ class DETAIL extends React.Component {
                         <div id="bash">
                             <CodeBlock
                                 text={"!pip install nlprep\n\n" +
-                                "nlprep\\\n" +
+                                "nlprep \\\n" +
                                 "--dataset      " + this.dataset['id'] + "\\\n" +
                                 "--outdir       dataset_" + this.dataset['id'] + " \n\n" +
                                 "optional arguments:\n" +
