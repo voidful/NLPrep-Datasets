@@ -60,7 +60,7 @@ class DETAIL extends React.Component {
                             <CodeBlock
                                 text={"!pip install nlprep\n\n" +
                                 "nlprep \\\n" +
-                                "--dataset      " + this.dataset['id'] + "\\\n" +
+                                "--dataset      " + this.dataset['id'] + " \\\n" +
                                 "--outdir       dataset_" + this.dataset['id'] + " \n\n" +
                                 "optional arguments:\n" +
                                 "--util         #utility name,string\n" +
