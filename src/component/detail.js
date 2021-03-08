@@ -47,7 +47,11 @@ class DETAIL extends React.Component {
                             text={"import nlprep\n" +
                             "ds = nlprep.load_dataset('" + this.dataset['id'] + "')\n" +
                             "for ds_name, mf in nlprep.convert_middleformat(ds).items():\n" +
-                            "   print(ds_name, mf.dump_list()[:10])"}
+                            "    print(ds_name)\n"+
+                            "    for _,datas in mf.dump_list():\n" +
+                            "        for d_input,d_target in datas:\n" +
+                            "            print(d_input)\n" +
+                            "            print(d_target)"}
                             language={'python'}
                             showLineNumbers={false}
                             theme={github}
